@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#ima {
+  width: 80px;
+  height: auto;
+  position:relative;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("IMAGES/background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.row {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.logo {
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  margin-top: 20px;
+}
+.main-nav li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 20px;
+}
+.main-nav li a {
+  color: chocolate;
+  text-decoration: none;
+  font-size: 18px;
+}
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+.main-nav li a:hover {
+  border-bottom: solid 2px;
+}
+/*.clearfix:after{
+    content:".";
+    visibility:hi;
+    display:block;
+    height:0px;
+    clear:both;
+
+}*/
+.main-content-header {
+  font-size: 100%;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+.main-content-header h1 {
+  font-size: 200%;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  font-style: italic;
+}
+.btn {
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.5s, border 0.5s;
+  color: darkcyan;
+}
+.btn-full {
+  background-color: transparent;
+  border: solid 1px;
+}
+.btn-nav {
+  background-color: transparent;
+  color: coral;
+  border: solid 1px;
+  margin-left: 15px;
+}
+.btn-half {
+  background-color: transparent;
+  color: aquamarine;
+  border: solid 1px;
+  margin-left: 15px;
+}
+body {
+  font-style: italic;
+}
+.btn-full:hover {
+  background-color: aqua;
+}
+.btn-nav:hover {
+  background-color: bisque;
+}
+.btn-half:hover {
+  background-color: aquamarine;
+}
+.master {
+  animation: colorchangeTHEWORLDOFFOOD 1s infinite;
+}
+@keyframes colorchangeTHEWORLDOFFOOD {
+  05% {
+    color: orange;
+  }
+  25% {
+    color: orangered;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: yellowgreen;
+  }
+}
+@media only screen and(max-width:1180px) {
+  .main-content-Header {
+    width: 100%;
+    padding: 02%;
+  }
+}
+@media only screen and(max-width:998px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+@media only screen and(max-width:768px) {
+  h1 {
+    font-size: 180%;
+  }
+  .main-nav {
+    display: none;
+  }
+  .mobile-icon {
+    display: inline-block;
+  }
+}
+#image {
+  float: right;
+  margin-left: 100px;
+  height: 150px;
+  width: auto;
+}
+/*HEADER CSS*/
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+o span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+.listFlex {
+  display: flex;
+  justify-content: center;
+}
